@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left, .right {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left {
+    width: 30%;
+    border-right: 1px solid #ddd;
+}
+
+.right {
+    width: 70%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 150px; /* 方框的宽度 */
+    height: auto; /* 保持图片比例 */
+    border: 3px solid #ddd; /* 方框的边框 */
+    margin-bottom: 10px;
+    border-radius: 0; /* 方框的边角为直角 */
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 5px 0;
+    transition: transform 0.5s ease; /* 平滑过渡变换效果，持续时间改为0.5秒 */
+}
+
+.header h2 {
+    font-size: 1em;
+    color: #555;
+    transition: transform 0.5s ease; /* 平滑过渡变换效果，持续时间改为0.5秒 */
+}
+
+.header h1:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大0.1倍 */
+    transform-origin: center; /* 以元素中心为缩放中心 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+}
+
+.header h2:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大0.1倍 */
+    transform-origin: center; /* 以元素中心为缩放中心 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1em; /* 默认字体大小 */
+    display: flex; /* 添加flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+    transition: transform 0.5s ease; /* 平滑过渡变换效果，持续时间改为0.5秒 */
+}
+
+.section h2:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大0.1倍 */
+    transform-origin: center; /* 以元素中心为缩放中心 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+}
+
+.section h3 {
+    font-size: 1em; /* 默认字体大小 */
+    display: flex; /* 添加flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+    transition: transform 0.5s ease; /* 平滑过渡变换效果，持续时间改为0.5秒 */
+}
+
+.section h3:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大0.1倍 */
+    transform-origin: center; /* 以元素中心为缩放中心 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+}
+
+.section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.section table, .section th, .section td {
+    border: 1px solid #ddd;
+}
+
+.section th, .section td {
+    padding: 8px;
+    text-align: left;
+}
+
+.section th {
+    background-color: #f2f2f2;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: #555;
+    margin-right: 10px;
+    transition: transform 0.5s ease; /* 平滑过渡变换效果，持续时间改为0.5秒 */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* 图标也放大0.1倍，避免文字放大后重叠 */
+}
+
+.hover-effect {
+    transition: transform 0.5s ease; /* 平滑过渡变换效果，持续时间改为0.5秒 */
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); /* 放大0.1倍，即原大小的110% */
+}
